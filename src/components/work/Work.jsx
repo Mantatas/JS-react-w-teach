@@ -17,8 +17,8 @@ const Work = (props) => {
             <td>{props.description}</td>
             <td>{props.from}</td>
             <td>{props.to}</td>
-            <td><Link to={`/update/${props.id}`}>Edit</Link></td>
-            <td><a href="#" onClick={deleteHandler}>Remove</a></td>
+            <td><Link className="btn btn-warning" to={`/update/${props.id}`}>Edit</Link></td>
+            <td><a href="#" className="btn btn-danger" onClick={deleteHandler}>Remove</a></td>
         </tr>
     )
 }

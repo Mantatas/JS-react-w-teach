@@ -25,6 +25,8 @@ const Profile = () => {
                     <ul className="dropdown-menu">
                         <li className="dropdown-item">{userData.email}</li>
                         <li className="dropdown-item" onClick={logout}>Atsijungti</li>
+                        <li className="dropdown-item"><Link to="/clients">Klientu valdymas</Link></li>
+                        <li className="dropdown-item"><Link to="/services">Paslaugu valdymas</Link></li>
                     </ul>
                 </li>:
                 <li className="nav-item"><Link to="/login" className="nav-link">Prisijungti</Link></li>
